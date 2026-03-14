@@ -14,24 +14,6 @@ Notes Workspace is a premium note-taking application engineered for speed, relia
 * **Beautiful UI/UX:** Frosted glassmorphism, responsive sidebar, and a buttery-smooth Dark/Light mode toggle powered by Tailwind CSS and Framer Motion.
 * **Slash Commands:** Type `/` to instantly open a floating formatting menu.
 
-## 🛠️ Tech Stack
-
-**Frontend:**
-* React (Vite)
-* Zustand (State Management)
-* Tailwind CSS + Custom Design Tokens
-* Framer Motion (Animations)
-* Tiptap (Headless Rich Text Editor)
-* Clerk React (Authentication)
-* Lucide React (Icons)
-
-**Backend & Infrastructure:**
-* Node.js & Express
-* PostgreSQL (Neon Serverless DB)
-* Prisma (ORM)
-* Cloudinary (Cloud Object Storage for Images)
-* Multer (Multipart/form-data handling)
-
 ## 🚀 Getting Started
 
 ### Prerequisites
