@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Image as ImageIcon, Loader2 } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 
 
@@ -34,7 +35,7 @@ export default function ImageUploadButton({ onUploadComplete }: ImageUploadButto
 
     try {
       // 2. Send it to your new backend route!
-      const response = await fetch('http://localhost:5000/api/upload', {
+      const response = await fetch(`${API_URL}/upload`, {
         method: 'POST',
         body: formData,
       });
