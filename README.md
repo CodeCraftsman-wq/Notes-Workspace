@@ -16,10 +16,31 @@ Notes Workspace is a premium note-taking application engineered for speed, relia
 
 ## 🚀 Getting Started
 
-### Prerequisites
-Make sure you have Node.js installed, as well as accounts setup for [Clerk](https://clerk.com/), [Neon](https://neon.tech/), and [Cloudinary](https://cloudinary.com/).
+## Prerequisites
 
-### 1. Clone the repository
+Before setting up **Notes Workspace**, make sure you have the following installed on your machine:
+
+### Required Software
+
+- **[Node.js](https://nodejs.org/)**: Version `18.x` or `20.x` LTS
+- **Package Manager**: One of the following:
+  - **[npm](https://www.npmjs.com/)**: `v9.x` or higher (bundled with Node.js)
+  - **[pnpm](https://pnpm.io/)** *(recommended)*: `v8.x` or higher
+  - **[yarn](https://yarnpkg.com/)**: `v1.22+` (Classic) or `v3.x+` (Berry)
+- **[Git](https://git-scm.com/)**: `v2.30+` for version control
+
+### Database & Storage (Choose based on your deployment)
+
+- **SQLite**: No extra installation required (runs locally via file driver).
+- **[PostgreSQL](https://www.postgresql.org/)** *(optional for production)*: `v14` or higher if running a centralized database.
+- **[Docker](https://www.docker.com/) & Docker Compose** *(optional)*: For running services (PostgreSQL, Redis) in containerized environments.
+
+### System Verification
+
+Verify that your environment meets the minimum version requirements by running:
+
 ```bash
-git clone [https://github.com/yourusername/notes-workspace.git](https://github.com/yourusername/notes-workspace.git)
-cd notes-workspace
+node -v    # Should return v18.0.0 or higher
+npm -v     # Or 'pnpm -v' / 'yarn -v'
+git --version
+
